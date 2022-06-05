@@ -358,7 +358,14 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 .section-projetos--fotoinfo h5 {
     font-size: 18px;
+    font-weight: bold;
+}
+.section-projetos--fotoinfo p {
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    text-align: center;
     font-weight: 600;
+    color: #fff;
 }
 
 .section-projetos--fotoarea:hover .section-projetos--fotoinfo {
@@ -382,25 +389,141 @@ CSS DE ÁREAS ESPECÍFICAS
     overflow: hidden;
     max-width: 880px;
     margin: auto;
+    display: flex;
 }
 
 .section-time .sliders {
     width: 1000vw;
-    height: 100%;    
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+
 }
 .section-time .slide{
     width: 280px;
     height: 100%;
     min-height: 300px;
     display: inline-block;
-    background-color: #fff;   
-    margin-right: 20px;
+    background-color: #eee;   
+    margin-right: 20px;        
 }
 .section-time .slidearea {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     flex-direction: column;
+    padding: 30px;
+}
+.section-time--avatar {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+
+    
+}
+.section-time--nome {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.section-time--role {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+.section-time--social {
+    display: flex;
+    margin-top: 20px;
+}
+.section-time--social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 13px;
+    margin-right: 10px;
+
+}
+.section-time a:hover {
+    background-color: #ED4848;
+}
+.section-name {
+display: flex;
+height: 50px;
+width: 500px;
+margin: auto;
+}
+.section-name input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    margin-left: 15px;
+    background: transparent;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    color: #000;
+}
+.section-sujeito {
+    display: flex;
+    height: 150px;
+    width: 500px;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+.section-sujeito input{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    margin-left: 15px;
+    background: transparent;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    
+}
+.section-sujeito textarea{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    margin-left: 15px;
+    background: transparent;
+    outline: 0;
+    width: 100%;
+    height: 100px;
+    color: #000;
+    resize: none;
+    margin-top: 15px;
+}
+
+form a {
+    margin-left: 480px;
+}
+footer {
+    display: flex;    
+    justify-content:flex-start;
+    background-color: #191919;
+    border-top: 1px solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
+    padding:6px;
+}
+.footer_member {
+    display: flex;
+
+    
+}
+.footer_thiago {
+    color: #777777;     
+    font-size: 12px;    
+    width: 100%;    
+}
+.footer_thiago a {
+    text-decoration: none;
+    outline: none;
+    color: #777777;
 }
