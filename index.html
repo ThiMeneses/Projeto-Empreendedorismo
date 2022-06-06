@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="device-width,minimum-scale=1, initial-scale=1">
     <script src="https://kit.fontawesome.com/f1b96a7f92.js" crossorigin="anonymous"></script>
     <title>YCW</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">    
@@ -13,11 +13,12 @@
     <header>
         <div class="header">
             <div class="logo">
-                <div class="logoimg"></div>
+                <div class="logoimg"> <img class="logoimg" src="assets/image/icones/logo.png" alt=""></div>
 
             </div>
             <div class="menu">
-                <nav>
+                <img onclick="menuToggle()" class="menu-opener" src="assets/image/icones/menu.png"">
+                <nav id="menu-area">
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">Quem Somos</a></li>
@@ -33,41 +34,36 @@
     <main>
         <section class="banner">
             <div class="sliders">
-                <div onclick="clicou1()" id="back" class="btn">
+                <div  onclick="clicou1(), pointer1(), pointer2()" id="back" class="btn">
                     <i class="fa-solid fa-angle-left"></i>    
                 </div>
-                <div onclick="clicou2()" id="next" class="btn">
+                <div onclick="clicou2(), pointer1(), pointer2()" id="next" class="btn">
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
                 <div class="bg-color">
                 <div class="slide clicou1">
                     <div class="slidearea">
-                       <h1>PENSANDO EM VENDER PELA </br><span>INTERNET</span></h1>
+                       <h1>PENSANDO EM VENDER PELA</br><span>INTERNET</span></h1>
                        <h2>Ligue Para Nós: (11) 00000-0000</h2>
                        <a href="" class="button">Entrar em Contato</a>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slidearea">
-                        <h1>PENSANDO EM VENDER PELA </br><span>roupa</span></h1>
+                        <h1>PENSANDO EM TER UM</br><span>SITE</span></h1>
                         <h2>Ligue Para Nós: (11) 00000-0000</h2>
                         <a href="" class="button">Entrar em Contato</a>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slidearea">
-                        <h1>PENSANDO EM VENDER PELA </br><span>casa</span></h1>
+                        <h1>PENSANDO EM CRIAR A SUA </br><span>REDE SOCIAL</span></h1>
                         <h2>Ligue Para Nós: (11) 00000-0000</h2>
                         <a href="" class="button">Entrar em Contato</a>
                     </div>
                 </div>
                 </div>
-            </div>
-            <div class="sliders-pointers">
-                <div class="pointer active" ></div>
-                <div class="pointer"></div>
-                <div class="pointer"></div>
-            </div>
+            </div>            
         </section>        
         <section class="default light">
             <div class="section-title">Sobre Nós</div>
@@ -320,6 +316,7 @@
         </div>
     </div>
 </footer>
+    <div id="scrollTopButton" onclick="backToTop()">/\</div>
     <script src="assets/js/script.js"></script>    
 </body>
 </html>
